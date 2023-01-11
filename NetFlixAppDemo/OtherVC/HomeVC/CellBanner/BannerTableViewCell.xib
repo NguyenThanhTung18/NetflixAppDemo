@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="NetFlixAppDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="488" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmu-od-cUN">
+                        <rect key="frame" x="0.0" y="0.0" width="488" height="175"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8uI-WN-3cf">
+                        <rect key="frame" x="0.0" y="93" width="488" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiF-KZ-3Zo">
+                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Danh Sách">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0W-lF-mK6">
+                                <rect key="frame" x="162.5" y="0.0" width="163" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Phát"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGV-0r-omi">
+                                <rect key="frame" x="325.5" y="0.0" width="162.5" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Thông Tin"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="pCD-R4-Jl5"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8uI-WN-3cf" secondAttribute="trailing" id="620-sa-F8J"/>
+                    <constraint firstAttribute="bottom" secondItem="8uI-WN-3cf" secondAttribute="bottom" constant="32" id="FF6-sC-2g2"/>
+                    <constraint firstItem="8uI-WN-3cf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GkC-3I-h4l"/>
+                    <constraint firstAttribute="bottom" secondItem="kmu-od-cUN" secondAttribute="bottom" id="HsE-S6-SXv"/>
+                    <constraint firstItem="kmu-od-cUN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ko7-WH-sum"/>
+                    <constraint firstAttribute="trailing" secondItem="kmu-od-cUN" secondAttribute="trailing" id="tJz-v7-OIl"/>
+                    <constraint firstItem="kmu-od-cUN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="y7c-L5-AGV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bannerImage" destination="kmu-od-cUN" id="srN-Wa-oJe"/>
+                <outlet property="listButton" destination="KiF-KZ-3Zo" id="AFg-PA-QWj"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="153.68303571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

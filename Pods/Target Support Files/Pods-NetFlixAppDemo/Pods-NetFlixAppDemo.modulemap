@@ -1,0 +1,6 @@
+framework module Pods_NetFlixAppDemo {
+  umbrella header "Pods-NetFlixAppDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
