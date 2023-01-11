@@ -13,6 +13,7 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         config()
+        print("Tung")
     }
     
     func config() {
